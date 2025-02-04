@@ -1,2 +1,2 @@
-# Restaurant-Billing-System
-Restaurant Billing System
+# Basic Website Examples
+- Basic Website Examples
