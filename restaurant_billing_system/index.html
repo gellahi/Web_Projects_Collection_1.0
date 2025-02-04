@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Restaurant Billing System</h2>
+        <div class="input-group">
+            <label for="billAmount">Total Bill Amount ($)</label>
+            <input type="number" id="billAmount" placeholder="Enter total bill amount">
+        </div>
+        <div class="input-group">
+            <label for="tipPercentage">Tip Percentage (%)</label>
+            <input type="number" id="tipPercentage" placeholder="Enter tip percentage">
+        </div>
+        <div class="input-group">
+            <label for="numPeople">Number of People</label>
+            <input type="number" id="numPeople" placeholder="Enter number of people">
+        </div>
+        <button class="btn" onclick="generateReceipt()">Calculate</button>
+
+        <div class="receipt-container" id="receipt">
+            <h3>Receipt</h3>
+            <div class="receipt-item">
+                <span>Total Bill:</span> <span>$<span id="receiptBillAmount">0</span></span>
+            </div>
+            <div class="receipt-item">
+                <span>Tax (8%):</span> <span>$<span id="receiptTax">0</span></span>
+            </div>
+            <div class="receipt-item">
+                <span>Tip:</span> <span>$<span id="receiptTip">0</span></span>
+            </div>
+            <div class="receipt-item">
+                <span>Total (with Tip & Tax):</span> <span>$<span id="receiptTotal">0</span></span>
+            </div>
+            <div class="receipt-item">
+                <span>Amount per Person:</span> <span>$<span id="receiptPerPerson">0</span></span>
+            </div>
+            <div class="receipt-total">
+                <p>Total: $<span id="finalTotal">0</span></p>
+            </div>
+            <div class="receipt-footer">
+                <p>Thank you for dining with us!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
