@@ -1,13 +1,10 @@
-document.getElementById("enrollmentForm").addEventListener("submit", function(event) {
+document.getElementById('dataForm').addEventListener('submit', function (event) {
     event.preventDefault();
-
-    const fullName = document.getElementById("fullName").value;
-    const email = document.getElementById("email").value;
-    const course = document.getElementById("course").value;
-
-    if (fullName && email && course) {
-        const successMessage = document.getElementById("successMessage");
-        successMessage.style.display = "block";
-        successMessage.innerHTML = `Form Submitted Successfully! Thank you, ${fullName}. We will contact you at ${email} for the ${course} course.`;
-    }
+    let fullName = document.getElementById('fullName').value;
+    let age = document.getElementById('age').value;
+    let course = document.getElementById('course').value;
+    let table = document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+    let newRow = table.insertRow();
+    newRow.innerHTML = `<td>${fullName}</td><td>${age}</td><td>${course}</td>`;
+    document.getElementById('dataForm').reset();
 });

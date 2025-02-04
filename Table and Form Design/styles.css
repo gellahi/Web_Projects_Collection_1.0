@@ -1,109 +1,96 @@
 :root {
-    --primary-color: #3498db;
-    --hover-color: #2980b9;
-    --dark-bg: #2c3e50;
-    --light-bg: #34495e;
-    --accent-color: #ecf0f1;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    --primary-color: #78005a;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--accent-color);
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 .container {
-    background-color: var(--light-bg);
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
     padding: 30px;
-    border-radius: 10px;
-    width: 600px;
-}
-
-h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-table th, table td {
-    padding: 10px;
+table,
+th,
+td {
     border: 1px solid #ddd;
-    text-align: center;
 }
 
-table th {
-    background-color: #34495e;
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
 }
 
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+tr:nth-child(odd) {
+    background-color: #fff;
 }
 
-table tr:nth-child(odd) {
-    background-color: #ffffff;
+tr:nth-child(even) {
+    background-color: #f0f0f0;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
-.form-group input, .form-group select {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    background-color: #555;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 5px;
-}
-
-.form-group input:focus, .form-group select:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 12px;
+th {
     background-color: var(--primary-color);
     color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: var(--hover-color);
-}
-
-#successMessage {
-    text-align: center;
+    border-radius: 4px;
     font-size: 16px;
-    margin-top: 20px;
-    color: #2ecc71;
-    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
