@@ -1,6 +1,81 @@
+:root {
+    --primary_color: #00d587;
+    --hover_color:#00b271;
+}
+
+/* Font Family Declarations */
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Thin\ Oblique.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Light\ Oblique.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Book\ Oblique.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Bold\ Oblique.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kamerik 205';
+    src: url('assets/fonts/Kamerik\ 205\ Heavy\ Oblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Kamerik 205', -apple-system, BlinkMacSystemFont, sans-serif;
     background-color: #2e2e2e;
     color: #fff;
     display: flex;
@@ -45,13 +120,13 @@ h2 {
 
 .input-group input:focus {
     outline: none;
-    border-color: #ff5722;
+    border-color: var(--primary_color);
 }
 
 .btn {
     width: 100%;
     padding: 12px;
-    background-color: #ff5722;
+    background-color: var(--primary_color);
     color: #fff;
     font-size: 16px;
     border: none;
@@ -61,7 +136,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #ff7043;
+    background-color: var(--hover_color);
 }
 
 .receipt-container {
@@ -96,7 +171,7 @@ h2 {
     font-size: 16px;
     margin-top: 20px;
     font-weight: bold;
-    color: #ff5722;
+    color: var(--primary_color);
 }
 
 .receipt-footer {
