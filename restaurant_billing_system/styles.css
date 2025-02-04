@@ -128,6 +128,19 @@ h2 {
     border-color: var(--primary_color);
 }
 
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary_color);
+}
+
+
 .btn {
     width: 100%;
     padding: 12px;
