@@ -3,6 +3,11 @@
     --hover_color:#00b271;
 }
 
+*{
+    margin: 0 0;
+    padding: 0 0;
+}
+
 /* Font Family Declarations */
 @font-face {
     font-family: 'Kamerik 205';
@@ -109,7 +114,7 @@ h2 {
 }
 
 .input-group input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     font-size: 14px;
     background-color: #555;
