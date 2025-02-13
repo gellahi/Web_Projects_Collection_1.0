@@ -1,4 +1,4 @@
-# Basic Website Examples
+# Web_Projects_Collection_1.0
 
 This repository contains a collection of basic website examples to demonstrate various web development concepts and techniques. Each example is a standalone project with its own HTML, CSS, and JavaScript files.
 
